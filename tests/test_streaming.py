@@ -117,8 +117,7 @@ async def test_old_or_future_cursor_gets_snapshot(start_servers: Any, api_key: A
         await _publish_n(producer, "s1", 12)
     old = Collector(Subscription(server.url, "s1", cursor=2))
     ahead = Collector(Subscription(server.url, "s1", cursor=99))
-    await old.wait_for_seq(12)
-    await ahead.wait_for_seq(12)
+    await wait_until(lambda: bool(old.items) and bool(ahead.items))
     assert isinstance(old.items[0], Snapshot) and old.items[0].reason == "cursor_expired"
     assert isinstance(ahead.items[0], Snapshot) and ahead.items[0].reason == "cursor_ahead"
     assert old.sub.cursor == 12
