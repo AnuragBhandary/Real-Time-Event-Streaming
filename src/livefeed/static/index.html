@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>livefeed viewer</title>
+<style>
+  :root { --bg: #0f1115; --panel: #181b22; --text: #e7e9ee; --muted: #8b93a7; --accent: #4f8cff; --ok: #3ecf8e; --warn: #f5a524; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 system-ui, sans-serif; background: var(--bg); color: var(--text); }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 20px; margin: 0 0 16px; }
+  form { display: flex; gap: 8px; margin-bottom: 16px; }
+  input { flex: 1; min-width: 0; padding: 8px 10px; border-radius: 6px; border: 1px solid #2a2f3a; background: var(--panel); color: var(--text); }
+  button { padding: 8px 14px; border-radius: 6px; border: 0; background: var(--accent); color: white; cursor: pointer; }
+  .panel { background: var(--panel); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+  .score { display: flex; justify-content: space-around; font-size: 28px; font-weight: 600; text-align: center; }
+  .score small { display: block; font-size: 13px; color: var(--muted); font-weight: 400; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: 13px; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--warn); margin-right: 6px; }
+  .dot.live { background: var(--ok); }
+  ol { list-style: none; margin: 0; padding: 0; max-height: 320px; overflow: auto; font-size: 13px; }
+  li { padding: 4px 0; border-bottom: 1px solid #222733; }
+  li b { color: var(--accent); font-weight: 500; margin-right: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>livefeed · live match viewer</h1>
+  <form id="f"><input id="stream" placeholder="stream id, e.g. match-1234-0" required><button>Watch</button></form>
+  <div class="panel score" id="score"><div>—</div></div>
+  <div class="panel meta">
+    <span><span class="dot" id="dot"></span><span id="conn">disconnected</span></span>
+    <span>seq <b id="seq">—</b></span><span>reconnects <b id="rc">0</b></span><span id="status"></span>
+  </div>
+  <div class="panel"><ol id="log"></ol></div>
+</main>
+<script>
+let ws, stream, cursor = null, state = {}, reconnects = 0, timer;
+const $ = (id) => document.getElementById(id);
+
+function render() {
+  const s = state.score || {};
+  $("score").innerHTML = Object.keys(s).map((t) =>
+    `<div>${s[t]}/${(state.wickets || {})[t] ?? 0}<small>${t}</small></div>`).join("") || "<div>—</div>";
+  $("seq").textContent = cursor ?? "—";
+  $("status").textContent = state.status ? `status: ${state.status}${state.winner ? " · winner " + state.winner : ""}` : "";
+}
+
+function apply(e) {
+  const d = e.data;
+  if (e.type === "match_started") { state = { status: "live", teams: d.teams, score: {}, wickets: {} }; d.teams.forEach((t) => { state.score[t] = 0; state.wickets[t] = 0; }); }
+  else if (e.type === "score") state.score[d.team] += d.points;
+  else if (e.type === "wicket") state.wickets[d.team] += 1;
+  else if (e.type === "match_ended") state.status = "finished";
+  const li = document.createElement("li");
+  li.innerHTML = `<b>#${e.seq}</b>${e.type} ${d.team ?? ""} ${d.points ?? ""} ${d.text ?? ""}`;
+  $("log").prepend(li);
+}
+
+function connect() {
+  const proto = location.protocol === "https:" ? "wss" : "ws";
+  const q = cursor === null ? "" : `?cursor=${cursor}`;
+  ws = new WebSocket(`${proto}://${location.host}/v1/streams/${encodeURIComponent(stream)}/ws${q}`);
+  ws.onopen = () => { $("dot").classList.add("live"); $("conn").textContent = "live"; };
+  ws.onmessage = (m) => {
+    const msg = JSON.parse(m.data);
+    if (msg.type === "snapshot") { state = msg.state; cursor = msg.seq; }
+    else if (msg.type === "events") for (const e of msg.items) { if (cursor !== null && e.seq <= cursor) continue; cursor = e.seq; apply(e); }
+    render();
+  };
+  ws.onclose = (ev) => {
+    $("dot").classList.remove("live"); $("conn").textContent = `reconnecting (close ${ev.code})`;
+    if (ev.code === 4004) { $("conn").textContent = "stream not found"; return; }
+    $("rc").textContent = ++reconnects; timer = setTimeout(connect, 300 + Math.random() * 700);
+  };
+}
+
+$("f").onsubmit = (ev) => {
+  ev.preventDefault(); clearTimeout(timer); if (ws) { ws.onclose = null; ws.close(); }
+  stream = $("stream").value.trim(); cursor = null; state = {}; reconnects = 0; $("log").innerHTML = ""; connect();
+};
+</script>
+</body>
+</html>
