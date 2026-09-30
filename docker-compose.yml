@@ -1,0 +1,82 @@
+# PostgreSQL, Redis, three livefeed instances and nginx in front of them.
+#   docker compose up -d --build --wait
+#   open http://localhost:8080  (live viewer)   ·   http://localhost:8080/docs  (API)
+# The bootstrap producer key below is for local development only.
+
+x-livefeed: &livefeed
+  image: livefeed:latest
+  command: ["serve"]
+  depends_on:
+    migrate: { condition: service_completed_successfully }
+    redis: { condition: service_healthy }
+  healthcheck:
+    test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/readyz')"]
+    interval: 3s
+    timeout: 3s
+    retries: 20
+  stop_grace_period: 10s
+  restart: unless-stopped
+
+x-env: &env
+  LIVEFEED_DATABASE_URL: postgresql://livefeed:livefeed@postgres:5432/livefeed
+  LIVEFEED_REDIS_URL: redis://redis:6379/0
+  LIVEFEED_BOOTSTRAP_API_KEY: ${LIVEFEED_DEV_KEY:-lf_0000000000de_local-dev-key-not-for-production}
+  LIVEFEED_DEFAULT_RATE_PER_S: "5000"
+  LIVEFEED_DEFAULT_BURST: "10000"
+  LIVEFEED_DB_POOL_MAX: "30"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: livefeed
+      POSTGRES_PASSWORD: livefeed
+      POSTGRES_DB: livefeed
+    command: ["postgres", "-c", "max_connections=300", "-c", "shared_buffers=256MB"]
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U livefeed -d livefeed"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  migrate:
+    build: .
+    image: livefeed:latest
+    command: ["migrate"]
+    environment: *env
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  livefeed1:
+    <<: *livefeed
+    environment: { <<: *env, LIVEFEED_INSTANCE_ID: livefeed1 }
+  livefeed2:
+    <<: *livefeed
+    environment: { <<: *env, LIVEFEED_INSTANCE_ID: livefeed2 }
+  livefeed3:
+    <<: *livefeed
+    environment: { <<: *env, LIVEFEED_INSTANCE_ID: livefeed3 }
+
+  nginx:
+    image: nginx:1.27-alpine
+    volumes: ["./deploy/nginx.conf:/etc/nginx/nginx.conf:ro"]
+    ports: ["8080:80"]
+    depends_on:
+      livefeed1: { condition: service_healthy }
+      livefeed2: { condition: service_healthy }
+      livefeed3: { condition: service_healthy }
+    restart: unless-stopped
+
+volumes:
+  pgdata:
