@@ -1,0 +1,78 @@
+{
+  "label": "headroom-no-chaos",
+  "timestamp": "2026-09-30T12:33:14.763483+00:00",
+  "machine": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.14"
+  },
+  "config": {
+    "role": "orchestrator",
+    "config": null,
+    "host_url": "http://localhost:8080",
+    "docker_url": "http://nginx:80",
+    "in_docker": true,
+    "network": "real-time-event-streaming_default",
+    "clients": 1000,
+    "streams": 20,
+    "events": 100000,
+    "rate": 1600.0,
+    "subscriber_procs": 4,
+    "producer_concurrency": 64,
+    "drop_mean_s": 0,
+    "kill_interval": 0,
+    "restart_after": 3,
+    "pubsub_kill_interval": 0,
+    "drain_timeout_s": 180,
+    "seed": 42,
+    "label": "headroom-1600eps",
+    "out": "/Users/anuragbhandary/Coding/Practice/Real-Time-Event-Streaming/bench/results"
+  },
+  "producer": {
+    "published": 100000,
+    "errors": {},
+    "retries": 0,
+    "duration_s": 99.5,
+    "rate_per_s": 1004.7,
+    "publish_latency_ms": {
+      "count": 100000,
+      "p50": 9.5,
+      "p90": 48.0,
+      "p95": 72.0,
+      "p99": 131.5,
+      "p99.9": 218.5,
+      "max": 354.0,
+      "mean": 19.52
+    }
+  },
+  "subscribers": {
+    "clients": 1000,
+    "all_drained": true,
+    "clients_complete": 1000,
+    "deliveries": 5000000,
+    "expected_deliveries": 5000000,
+    "duplicates_received": 0,
+    "out_of_order_received": 0,
+    "snapshot_resets": 0,
+    "reconnects": 0,
+    "close_codes": {},
+    "live_latency_ms": {
+      "count": 5000000,
+      "p50": 7.5,
+      "p90": 46.5,
+      "p95": 70.5,
+      "p99": 130.0,
+      "p99.9": 216.5,
+      "max": 352.5,
+      "mean": 17.96
+    },
+    "replay_latency_ms": {
+      "count": 0
+    }
+  },
+  "database": {
+    "events": 100020,
+    "streams_with_gaps": 0
+  },
+  "chaos_events": [],
+  "note": "requested 1600 events/s; the single producer process achieved 1004.7/s (per-stream publishes are sequential by design)"
+}
