@@ -8,6 +8,7 @@ from importlib import resources
 
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from prometheus_client import CONTENT_TYPE_LATEST, generate_latest
 
 from livefeed import __version__
@@ -61,11 +62,22 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     )
     app.include_router(router)
 
+    # The React app (web/), built into the package by `npm run build` or the Docker image.
+    web = resources.files("livefeed.static").joinpath("web")
+    built = web.joinpath("index.html").is_file()
+    if built:
+        app.mount("/assets", StaticFiles(directory=str(web.joinpath("assets"))), name="assets")
+
     @app.get("/", include_in_schema=False)
-    async def viewer() -> HTMLResponse:
-        """A small live scoreboard page for demos."""
-        page = resources.files("livefeed.static").joinpath("index.html").read_text()
-        return HTMLResponse(page)
+    @app.get("/m/{stream_id}", include_in_schema=False)
+    async def web_app() -> HTMLResponse:
+        """The live match web app; client-side routes all load the same page."""
+        if not built:
+            return HTMLResponse(
+                "<!doctype html><title>livefeed</title><p>The web app is not built. "
+                "Run <code>make web</code>, or use the Docker image.</p>"
+            )
+        return HTMLResponse(web.joinpath("index.html").read_text())
 
     @app.get("/healthz", tags=["ops"])
     async def healthz() -> dict[str, str]:

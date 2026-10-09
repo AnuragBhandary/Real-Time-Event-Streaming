@@ -1,4 +1,4 @@
-.PHONY: install infra up down test lint typecheck check demo load-smoke load
+.PHONY: install infra up down test lint typecheck check demo load-smoke load web web-dev web-test e2e
 
 install:            ## install dependencies (needs uv)
 	uv sync
@@ -35,3 +35,15 @@ load: up           ## the resume numbers (about 5 minutes)
 	uv run python bench/loadtest.py --in-docker --clients 1000 --streams 20 --events 100000 \
 		--rate 400 --subscriber-procs 4 --drop-mean-s 20 --kill-interval 45 \
 		--pubsub-kill-interval 30 --label full-1000-clients-chaos
+
+web:                ## build the React app into the package (served at / by every instance)
+	cd web && npm ci && npm run build
+
+web-dev:            ## Vite dev server on :5173, proxying the API to the stack on :8080
+	cd web && npm run dev
+
+web-test:           ## lint, typecheck, unit + component tests with coverage
+	cd web && npm run lint && npm run typecheck && npm run coverage
+
+e2e: up             ## browser tests with chaos (drops, rolling restarts, SIGKILL); about 1 minute
+	cd web && npx playwright test

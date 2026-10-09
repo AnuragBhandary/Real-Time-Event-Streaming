@@ -188,7 +188,34 @@ guarantees.
 - **PostgreSQL**: appends are per-stream serial and parallel across streams. Partition `events`
   by time for retention; archive old streams. Replays are primary-key range scans.
 
-## 10. Limitations (deliberate)
+## 10. The browser client
+
+The web app (`web/`) does not trust the server blindly; it checks the same invariant the server
+promises. `FeedClient` keeps a cursor and folds an item only if `seq == cursor + 1`. Anything at or
+below the cursor is a duplicate and is dropped. Anything above it is a gap: the client abandons
+the socket (close `4000`) and reconnects from its cursor instead of applying past a hole.
+
+- **One recovery path, again.** A network drop, an instance restart (`1012`), a slow-consumer
+  cut-off (`4008`), a server resync (`4009`), a client-side gap and a heartbeat timeout all end in
+  a reconnect with `?cursor=N`. Server-initiated ones reconnect at once, with up to 250 ms of
+  jitter so a restarted instance's clients do not all reconnect at once. Network failures back
+  off exponentially with full jitter (0.5 s doubling up to 10 s), and the backoff resets after 5
+  stable seconds.
+- **Abandoned sockets are fenced.** Each socket gets a generation number. Once the client gives
+  up on a socket, anything it still delivers is ignored. Without that, a late frame from the old
+  socket could be applied after the new socket's replay.
+- **Liveness.** Any frame re-arms a 40-second watchdog (the server heartbeats every 15 s). An
+  application ping every 10 s measures round-trip time. While the browser reports offline, the
+  client waits for the `online` event instead of retrying.
+- **State.** The page starts from the server's snapshot and folds later events with a TypeScript
+  port of the reducer. A contract test keeps the two identical: Python writes the state after
+  every event of three simulated matches, and the TypeScript reducer must reproduce each one.
+- **React.** The client is a plain class with `subscribe` / `getSnapshot`, and the page reads it
+  with `useSyncExternalStore`. Each update creates a new immutable snapshot, so components
+  re-render only when something changed and never see a torn state. REST data (the match list
+  and the mid-match backfill) uses TanStack Query.
+
+## 11. Limitations (deliberate)
 
 - One stream per WebSocket connection (multiplexing many streams is a straightforward extension).
 - Subscribers are unauthenticated (public live feeds). Private streams would need signed,

@@ -68,6 +68,20 @@ async def get_stream(db: Executor, stream_id: str) -> asyncpg.Record | None:
     )
 
 
+async def list_streams(db: Executor, kind: str | None, limit: int) -> list[asyncpg.Record]:
+    """Most recently updated streams first, optionally of one kind."""
+    return await db.fetch(
+        """
+        SELECT id, kind, last_seq, state, created_at, updated_at FROM streams
+        WHERE ($1::text IS NULL OR kind = $1)
+        ORDER BY updated_at DESC
+        LIMIT $2
+        """,
+        kind,
+        limit,
+    )
+
+
 async def append_events(
     pool: asyncpg.Pool, stream_id: str, owner_key_id: int, events: Sequence[NewEvent]
 ) -> tuple[list[AppendResult], list[asyncpg.Record]]:

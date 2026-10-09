@@ -12,3 +12,10 @@ dist/
 build/
 *.egg-info/
 .DS_Store
+
+# Built web app (npm run build in web/)
+src/livefeed/static/web/
+node_modules/
+web/test-results/
+web/playwright-report/
+web/coverage/

@@ -173,4 +173,18 @@ async def test_ops_endpoints(http: httpx.AsyncClient) -> None:
     assert (await http.get("/readyz")).json() == {"postgres": "ok", "redis": "ok"}
     assert "livefeed_ws_connections" in (await http.get("/metrics")).text
     assert (await http.get("/v1/instance")).json()["instance_id"] == "test-0"
-    assert "livefeed viewer" in (await http.get("/")).text
+    page = (await http.get("/")).text
+    assert "<title>livefeed" in page
+    assert (await http.get("/m/some-match")).text == page  # client-side routes share the page
+
+
+async def test_list_streams(http: httpx.AsyncClient) -> None:
+    await _create(http, "a", kind="match")
+    await _create(http, "b", kind="generic")
+    await _create(http, "c", kind="match")
+    await _publish(http, "a", {"type": "match_started", "data": {"teams": ["MI", "CSK"]}})
+    listed = (await http.get("/v1/streams", params={"kind": "match"})).json()
+    assert [s["id"] for s in listed] == ["a", "c"]  # most recently updated first
+    assert listed[0]["seq"] == 1 and listed[0]["state"]["status"] == "live"
+    assert len((await http.get("/v1/streams", params={"limit": 2})).json()) == 2
+    assert (await http.get("/v1/streams", params={"kind": "nope"})).status_code == 422

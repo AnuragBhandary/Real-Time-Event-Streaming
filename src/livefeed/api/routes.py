@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import time
+from typing import Literal
 
 import asyncpg
 import orjson
@@ -70,6 +71,16 @@ async def create_stream(
             raise HTTPException(status.HTTP_409_CONFLICT, "stream id already taken")
         response.status_code = status.HTTP_200_OK
     return _stream_out(row)
+
+
+@router.get("/streams", response_model=list[StreamOut], tags=["streams"])
+async def list_streams(
+    kind: Literal["generic", "match"] | None = Query(default=None),
+    limit: int = Query(default=20, ge=1, le=100),
+    state: AppState = Depends(get_state),
+) -> list[StreamOut]:
+    """Recently active streams, newest first (public). The web app lists live matches with it."""
+    return [_stream_out(row) for row in await repo.list_streams(state.pool, kind, limit)]
 
 
 @router.get("/streams/{stream_id}", response_model=StreamOut, tags=["streams"])

@@ -1,0 +1,4872 @@
+{
+ "cases": [
+  {
+   "kind": "match",
+   "seed": 1,
+   "steps": [
+    {
+     "data": {
+      "teams": [
+       "RCB",
+       "CSK"
+      ]
+     },
+     "state": {
+      "events": 1,
+      "score": {
+       "CSK": 0,
+       "RCB": 0
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "match_started"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "events": 2,
+      "score": {
+       "CSK": 0,
+       "RCB": 1
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "events": 3,
+      "score": {
+       "CSK": 0,
+       "RCB": 3
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Driven through the covers!"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 4,
+      "score": {
+       "CSK": 0,
+       "RCB": 3
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 5,
+      "score": {
+       "CSK": 0,
+       "RCB": 4
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 6,
+      "score": {
+       "CSK": 0,
+       "RCB": 5
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 7,
+      "score": {
+       "CSK": 0,
+       "RCB": 6
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 8,
+      "score": {
+       "CSK": 0,
+       "RCB": 6
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "ball": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 9,
+      "score": {
+       "CSK": 0,
+       "RCB": 6
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 10,
+      "score": {
+       "CSK": 0,
+       "RCB": 12
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 11,
+      "score": {
+       "CSK": 0,
+       "RCB": 14
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 12,
+      "score": {
+       "CSK": 0,
+       "RCB": 14
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 13,
+      "score": {
+       "CSK": 0,
+       "RCB": 20
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 14,
+      "score": {
+       "CSK": 0,
+       "RCB": 24
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 15,
+      "score": {
+       "CSK": 0,
+       "RCB": 25
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 16,
+      "score": {
+       "CSK": 0,
+       "RCB": 27
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 17,
+      "score": {
+       "CSK": 0,
+       "RCB": 28
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 18,
+      "score": {
+       "CSK": 0,
+       "RCB": 32
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 19,
+      "score": {
+       "CSK": 0,
+       "RCB": 38
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 20,
+      "score": {
+       "CSK": 0,
+       "RCB": 39
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 21,
+      "score": {
+       "CSK": 0,
+       "RCB": 41
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 22,
+      "score": {
+       "CSK": 0,
+       "RCB": 42
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 23,
+      "score": {
+       "CSK": 0,
+       "RCB": 44
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Timeout called on the field."
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 24,
+      "score": {
+       "CSK": 0,
+       "RCB": 44
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 25,
+      "score": {
+       "CSK": 0,
+       "RCB": 44
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 26,
+      "score": {
+       "CSK": 0,
+       "RCB": 46
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 27,
+      "score": {
+       "CSK": 0,
+       "RCB": 50
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 28,
+      "score": {
+       "CSK": 0,
+       "RCB": 51
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 29,
+      "score": {
+       "CSK": 0,
+       "RCB": 51
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 30,
+      "score": {
+       "CSK": 0,
+       "RCB": 52
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 31,
+      "score": {
+       "CSK": 0,
+       "RCB": 56
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 32,
+      "score": {
+       "CSK": 0,
+       "RCB": 57
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 33,
+      "score": {
+       "CSK": 0,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 34,
+      "score": {
+       "CSK": 4,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 35,
+      "score": {
+       "CSK": 6,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 36,
+      "score": {
+       "CSK": 7,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 37,
+      "score": {
+       "CSK": 13,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 38,
+      "score": {
+       "CSK": 14,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Timeout called on the field."
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 39,
+      "score": {
+       "CSK": 14,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 40,
+      "score": {
+       "CSK": 15,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "ball": 36,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 41,
+      "score": {
+       "CSK": 15,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 42,
+      "score": {
+       "CSK": 16,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 43,
+      "score": {
+       "CSK": 18,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 44,
+      "score": {
+       "CSK": 22,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 45,
+      "score": {
+       "CSK": 22,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Beaten outside off, great delivery."
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 46,
+      "score": {
+       "CSK": 22,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 47,
+      "score": {
+       "CSK": 22,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 48,
+      "score": {
+       "CSK": 22,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 49,
+      "score": {
+       "CSK": 22,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 50,
+      "score": {
+       "CSK": 23,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 51,
+      "score": {
+       "CSK": 23,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 52,
+      "score": {
+       "CSK": 23,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 53,
+      "score": {
+       "CSK": 24,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 54,
+      "score": {
+       "CSK": 27,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Driven through the covers!"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 55,
+      "score": {
+       "CSK": 27,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 56,
+      "score": {
+       "CSK": 27,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 57,
+      "score": {
+       "CSK": 28,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 58,
+      "score": {
+       "CSK": 34,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 59,
+      "score": {
+       "CSK": 35,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "ball": 53,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 60,
+      "score": {
+       "CSK": 35,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 2,
+       "RCB": 1
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 61,
+      "score": {
+       "CSK": 36,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 2,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 62,
+      "score": {
+       "CSK": 36,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 2,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "ball": 56,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 63,
+      "score": {
+       "CSK": 36,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "text": "Driven through the covers!"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 64,
+      "score": {
+       "CSK": 36,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 65,
+      "score": {
+       "CSK": 40,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 66,
+      "score": {
+       "CSK": 40,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Driven through the covers!"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 67,
+      "score": {
+       "CSK": 40,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 68,
+      "score": {
+       "CSK": 40,
+       "RCB": 58
+      },
+      "status": "live",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {},
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 69,
+      "score": {
+       "CSK": 40,
+       "RCB": 58
+      },
+      "status": "finished",
+      "teams": [
+       "RCB",
+       "CSK"
+      ],
+      "wickets": {
+       "CSK": 3,
+       "RCB": 1
+      },
+      "winner": "RCB"
+     },
+     "type": "match_ended"
+    }
+   ]
+  },
+  {
+   "kind": "match",
+   "seed": 7,
+   "steps": [
+    {
+     "data": {
+      "teams": [
+       "RR",
+       "RCB"
+      ]
+     },
+     "state": {
+      "events": 1,
+      "score": {
+       "RCB": 0,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "match_started"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "events": 2,
+      "score": {
+       "RCB": 0,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "events": 3,
+      "score": {
+       "RCB": 0,
+       "RR": 1
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "events": 4,
+      "score": {
+       "RCB": 0,
+       "RR": 1
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "events": 5,
+      "score": {
+       "RCB": 0,
+       "RR": 2
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Timeout called on the field."
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 6,
+      "score": {
+       "RCB": 0,
+       "RR": 2
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 7,
+      "score": {
+       "RCB": 0,
+       "RR": 2
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 8,
+      "score": {
+       "RCB": 0,
+       "RR": 3
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 9,
+      "score": {
+       "RCB": 0,
+       "RR": 3
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 10,
+      "score": {
+       "RCB": 0,
+       "RR": 3
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 11,
+      "score": {
+       "RCB": 0,
+       "RR": 6
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 12,
+      "score": {
+       "RCB": 0,
+       "RR": 7
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 13,
+      "score": {
+       "RCB": 0,
+       "RR": 7
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Short ball, pulled away to deep midwicket."
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 14,
+      "score": {
+       "RCB": 0,
+       "RR": 7
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 15,
+      "score": {
+       "RCB": 0,
+       "RR": 8
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 16,
+      "score": {
+       "RCB": 0,
+       "RR": 12
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 17,
+      "score": {
+       "RCB": 0,
+       "RR": 12
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 18,
+      "score": {
+       "RCB": 0,
+       "RR": 12
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 19,
+      "score": {
+       "RCB": 0,
+       "RR": 13
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 20,
+      "score": {
+       "RCB": 0,
+       "RR": 14
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 21,
+      "score": {
+       "RCB": 0,
+       "RR": 18
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 22,
+      "score": {
+       "RCB": 0,
+       "RR": 18
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 23,
+      "score": {
+       "RCB": 0,
+       "RR": 21
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 24,
+      "score": {
+       "RCB": 0,
+       "RR": 22
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 25,
+      "score": {
+       "RCB": 0,
+       "RR": 22
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 26,
+      "score": {
+       "RCB": 0,
+       "RR": 22
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 27,
+      "score": {
+       "RCB": 0,
+       "RR": 23
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 28,
+      "score": {
+       "RCB": 0,
+       "RR": 25
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 29,
+      "score": {
+       "RCB": 0,
+       "RR": 31
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 30,
+      "score": {
+       "RCB": 0,
+       "RR": 32
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 31,
+      "score": {
+       "RCB": 0,
+       "RR": 34
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 32,
+      "score": {
+       "RCB": 0,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 33,
+      "score": {
+       "RCB": 0,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 34,
+      "score": {
+       "RCB": 1,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 35,
+      "score": {
+       "RCB": 2,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 36,
+      "score": {
+       "RCB": 2,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 37,
+      "score": {
+       "RCB": 2,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 38,
+      "score": {
+       "RCB": 2,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 39,
+      "score": {
+       "RCB": 3,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 40,
+      "score": {
+       "RCB": 7,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 41,
+      "score": {
+       "RCB": 9,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 42,
+      "score": {
+       "RCB": 15,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 43,
+      "score": {
+       "RCB": 16,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 44,
+      "score": {
+       "RCB": 17,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 45,
+      "score": {
+       "RCB": 18,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 46,
+      "score": {
+       "RCB": 18,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 47,
+      "score": {
+       "RCB": 24,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 48,
+      "score": {
+       "RCB": 24,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 49,
+      "score": {
+       "RCB": 30,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 50,
+      "score": {
+       "RCB": 30,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 51,
+      "score": {
+       "RCB": 31,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 52,
+      "score": {
+       "RCB": 33,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 53,
+      "score": {
+       "RCB": 34,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 54,
+      "score": {
+       "RCB": 40,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 55,
+      "score": {
+       "RCB": 44,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 56,
+      "score": {
+       "RCB": 45,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Beaten outside off, great delivery."
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 57,
+      "score": {
+       "RCB": 45,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 58,
+      "score": {
+       "RCB": 49,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 59,
+      "score": {
+       "RCB": 50,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 60,
+      "score": {
+       "RCB": 51,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 61,
+      "score": {
+       "RCB": 51,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 62,
+      "score": {
+       "RCB": 54,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 63,
+      "score": {
+       "RCB": 56,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RCB"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 64,
+      "score": {
+       "RCB": 57,
+       "RR": 35
+      },
+      "status": "live",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {},
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 65,
+      "score": {
+       "RCB": 57,
+       "RR": 35
+      },
+      "status": "finished",
+      "teams": [
+       "RR",
+       "RCB"
+      ],
+      "wickets": {
+       "RCB": 0,
+       "RR": 0
+      },
+      "winner": "RCB"
+     },
+     "type": "match_ended"
+    }
+   ]
+  },
+  {
+   "kind": "match",
+   "seed": 2026,
+   "steps": [
+    {
+     "data": {
+      "teams": [
+       "CSK",
+       "RR"
+      ]
+     },
+     "state": {
+      "events": 1,
+      "score": {
+       "CSK": 0,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "match_started"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 2,
+      "score": {
+       "CSK": 1,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 3,
+      "score": {
+       "CSK": 1,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 4,
+      "score": {
+       "CSK": 3,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 5,
+      "score": {
+       "CSK": 5,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 6,
+      "score": {
+       "CSK": 5,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 7,
+      "score": {
+       "CSK": 8,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 8,
+      "score": {
+       "CSK": 9,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 9,
+      "score": {
+       "CSK": 9,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 10,
+      "score": {
+       "CSK": 12,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 11,
+      "score": {
+       "CSK": 12,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 12,
+      "score": {
+       "CSK": 12,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 13,
+      "score": {
+       "CSK": 14,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 0,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "ball": 12,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 14,
+      "score": {
+       "CSK": 14,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 15,
+      "score": {
+       "CSK": 15,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 16,
+      "score": {
+       "CSK": 16,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 17,
+      "score": {
+       "CSK": 18,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 18,
+      "score": {
+       "CSK": 22,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 19,
+      "score": {
+       "CSK": 26,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 20,
+      "score": {
+       "CSK": 26,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 21,
+      "score": {
+       "CSK": 26,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 22,
+      "score": {
+       "CSK": 26,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 23,
+      "score": {
+       "CSK": 27,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 24,
+      "score": {
+       "CSK": 28,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 25,
+      "score": {
+       "CSK": 32,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 26,
+      "score": {
+       "CSK": 33,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 27,
+      "score": {
+       "CSK": 35,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 28,
+      "score": {
+       "CSK": 39,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "events": 29,
+      "score": {
+       "CSK": 39,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Timeout called on the field."
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 30,
+      "score": {
+       "CSK": 39,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 3,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 31,
+      "score": {
+       "CSK": 42,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "CSK"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 32,
+      "score": {
+       "CSK": 42,
+       "RR": 0
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 33,
+      "score": {
+       "CSK": 42,
+       "RR": 2
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 34,
+      "score": {
+       "CSK": 42,
+       "RR": 3
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Beaten outside off, great delivery."
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 35,
+      "score": {
+       "CSK": 42,
+       "RR": 3
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Beaten outside off, great delivery.",
+      "events": 36,
+      "score": {
+       "CSK": 42,
+       "RR": 7
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Timeout called on the field."
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 37,
+      "score": {
+       "CSK": 42,
+       "RR": 7
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 38,
+      "score": {
+       "CSK": 42,
+       "RR": 11
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 39,
+      "score": {
+       "CSK": 42,
+       "RR": 13
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 40,
+      "score": {
+       "CSK": 42,
+       "RR": 17
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 41,
+      "score": {
+       "CSK": 42,
+       "RR": 21
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 42,
+      "score": {
+       "CSK": 42,
+       "RR": 21
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 43,
+      "score": {
+       "CSK": 42,
+       "RR": 25
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 44,
+      "score": {
+       "CSK": 42,
+       "RR": 25
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Timeout called on the field."
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 45,
+      "score": {
+       "CSK": 42,
+       "RR": 25
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 46,
+      "score": {
+       "CSK": 42,
+       "RR": 26
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 47,
+      "score": {
+       "CSK": 42,
+       "RR": 26
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 48,
+      "score": {
+       "CSK": 42,
+       "RR": 32
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 49,
+      "score": {
+       "CSK": 42,
+       "RR": 32
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 6,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 50,
+      "score": {
+       "CSK": 42,
+       "RR": 38
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 51,
+      "score": {
+       "CSK": 42,
+       "RR": 38
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 52,
+      "score": {
+       "CSK": 42,
+       "RR": 40
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 53,
+      "score": {
+       "CSK": 42,
+       "RR": 41
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Timeout called on the field.",
+      "events": 54,
+      "score": {
+       "CSK": 42,
+       "RR": 41
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Driven through the covers!"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 55,
+      "score": {
+       "CSK": 42,
+       "RR": 41
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "points": 0,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 56,
+      "score": {
+       "CSK": 42,
+       "RR": 41
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 4,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 57,
+      "score": {
+       "CSK": 42,
+       "RR": 45
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 0
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "ball": 51,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 58,
+      "score": {
+       "CSK": 42,
+       "RR": 45
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 59,
+      "score": {
+       "CSK": 42,
+       "RR": 46
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 60,
+      "score": {
+       "CSK": 42,
+       "RR": 47
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 61,
+      "score": {
+       "CSK": 42,
+       "RR": 48
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 62,
+      "score": {
+       "CSK": 42,
+       "RR": 49
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Driven through the covers!",
+      "events": 63,
+      "score": {
+       "CSK": 42,
+       "RR": 50
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "text": "Short ball, pulled away to deep midwicket."
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 64,
+      "score": {
+       "CSK": 42,
+       "RR": 50
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 1
+      }
+     },
+     "type": "commentary"
+    },
+    {
+     "data": {
+      "ball": 57,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 65,
+      "score": {
+       "CSK": 42,
+       "RR": 50
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 2
+      }
+     },
+     "type": "wicket"
+    },
+    {
+     "data": {
+      "points": 1,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 66,
+      "score": {
+       "CSK": 42,
+       "RR": 51
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 2
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {
+      "points": 2,
+      "team": "RR"
+     },
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 67,
+      "score": {
+       "CSK": 42,
+       "RR": 53
+      },
+      "status": "live",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 2
+      }
+     },
+     "type": "score"
+    },
+    {
+     "data": {},
+     "state": {
+      "commentary": "Short ball, pulled away to deep midwicket.",
+      "events": 68,
+      "score": {
+       "CSK": 42,
+       "RR": 53
+      },
+      "status": "finished",
+      "teams": [
+       "CSK",
+       "RR"
+      ],
+      "wickets": {
+       "CSK": 1,
+       "RR": 2
+      },
+      "winner": "RR"
+     },
+     "type": "match_ended"
+    }
+   ]
+  },
+  {
+   "kind": "generic",
+   "seed": null,
+   "steps": [
+    {
+     "data": {
+      "x": 1
+     },
+     "state": {
+      "counts": {
+       "a": 1
+      },
+      "events": 1,
+      "last": {
+       "type": "a",
+       "x": 1
+      }
+     },
+     "type": "a"
+    },
+    {
+     "data": {},
+     "state": {
+      "counts": {
+       "a": 1,
+       "b": 1
+      },
+      "events": 2,
+      "last": {
+       "type": "b"
+      }
+     },
+     "type": "b"
+    },
+    {
+     "data": {
+      "x": 2,
+      "y": "z"
+     },
+     "state": {
+      "counts": {
+       "a": 2,
+       "b": 1
+      },
+      "events": 3,
+      "last": {
+       "type": "a",
+       "x": 2,
+       "y": "z"
+      }
+     },
+     "type": "a"
+    }
+   ]
+  }
+ ]
+}

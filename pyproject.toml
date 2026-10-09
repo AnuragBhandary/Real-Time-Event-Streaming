@@ -37,6 +37,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/livefeed"]
+# The built web app is git-ignored but must ship in the wheel (and the Docker image).
+artifacts = ["src/livefeed/static/web"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"

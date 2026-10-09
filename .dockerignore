@@ -1,0 +1,9 @@
+.venv
+.git
+**/node_modules
+**/__pycache__
+web/test-results
+web/playwright-report
+web/coverage
+src/livefeed/static/web
+bench/results

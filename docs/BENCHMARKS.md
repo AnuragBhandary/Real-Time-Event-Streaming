@@ -74,10 +74,41 @@ stream publishes sequentially (to keep the match reducer's order meaningful) and
 one HTTP round trip plus one PostgreSQL transaction. So this is a floor on capacity, not a
 ceiling. Even at 2.5× the target load, p95 stays under 150 ms.
 
+## 3. Browser end to end (Playwright)
+
+`web/e2e/live-match.spec.ts` runs against the same compose stack with headless Chromium. A
+producer publishes one simulated match (one event every ~15 ms, retrying with the same
+`event_id` through restarts) while three tabs watch it:
+
+- **steady** opens before the match starts and is left alone;
+- **dropped** opens before the start; its socket is killed with **Simulate network drop** six
+  times, at 1/8, 2/8, ... 6/8 of the match;
+- **joined** opens at 3/8, so it starts from a snapshot and backfills recent balls over REST.
+
+At the same points the instances are restarted one by one with `docker compose restart` (graceful:
+clients get `1012`), then `livefeed2` is SIGKILLed (no close frame) and later brought back. At
+the end each tab must show the server's final cursor, every team's runs and wickets, and the
+result. Its ball by ball list must be consecutive with no repeats. The two tabs that watched from
+the start must have applied exactly `last_seq` events.
+
+| Run | Events (last seq) | steady: applied / reconnects | dropped: applied / reconnects | joined: applied / reconnects | Duplicates dropped / gaps (all tabs) |
+|---|---|---|---|---|---|
+| 1 | 602 | 602 / 1 | 602 / 7 | 365 / 1 | 0 / 0 |
+| 2 | 1,502 | 1,502 / 2 | 1,502 / 6 | 931 / 0 | 0 / 0 |
+| 3 | 1,502 | 1,502 / 1 | 1,502 / 7 | 921 / 1 | 0 / 0 |
+| 4 | 1,502 | 1,502 / 1 | 1,502 / 7 | 926 / 1 | 0 / 0 |
+
+All four runs passed. A tab only reconnects when its own instance is the one restarted or killed,
+so the counts vary between runs. The browser never needed its own duplicate or gap handling here,
+because the server's resume path already delivered exactly the missing events. Those client
+paths are covered by unit tests against a scripted socket (`web/src/feed/client.test.ts`)
+instead.
+
 ## Reproduce
 
 ```bash
 make up
 make load-smoke   # about a minute, small, with every kind of chaos
 make load         # run 1 above (about 5 minutes)
+make e2e          # run 3 above with 600 events; E2E_EVENTS=1500 for the longer runs
 ```

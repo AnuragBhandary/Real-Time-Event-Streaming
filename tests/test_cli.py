@@ -33,7 +33,7 @@ def _env(monkeypatch: pytest.MonkeyPatch, database: str) -> None:
 
 
 def test_migrations_idempotent(capsys: pytest.CaptureFixture[str]) -> None:
-    assert [v for v, _ in migration_files()] == ["0001_init"]
+    assert [v for v, _ in migration_files()] == ["0001_init", "0002_streams_recent"]
     assert asyncio.run(migrate(DATABASE_URL)) == []
     assert cli.main(["migrate"]) == 0
     assert "up to date" in capsys.readouterr().out
