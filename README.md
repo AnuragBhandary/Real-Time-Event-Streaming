@@ -160,5 +160,5 @@ web/src/
   components/     scoreboard, ball by ball feed, connection panel
 web/e2e/          Playwright chaos test against the running stack
 bench/loadtest.py 1,000-client load + chaos harness with protocol-level auditing
-docs/             DESIGN.md · BENCHMARKS.md · INTERVIEW.md
+docs/             DESIGN.md · BENCHMARKS.md
 ```
